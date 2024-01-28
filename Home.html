@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="Style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet">
+
     <title>Incriptador</title>
 
 </head>
@@ -17,7 +22,7 @@
     </header>
     <main class="contenedor">
         <div class="column">
-            <textarea name="codigo" id="codigo1" cols="30" rows="10"></textarea>
+            <textarea name="codigo" id="codigo1" cols="30" rows="10" required></textarea>
             <label><img src="./Recursos/signo-de-exclamacion-en-un-circulo.png" alt="Signo_exclamacion" width="2%"> solo letras minusculas y sin acento</label>
             <br>
             <div class="botones">
@@ -34,6 +39,7 @@
             <button id="copiar" onclick="copiar();">Copiar</button>
         </div>
     </main>
+
     <footer>
         <h2 id="contacto">Contacto</h2>
         <a href="https://github.com/Rojo-Web" target="_blank">

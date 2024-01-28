@@ -108,6 +108,15 @@ function copiar() {
 
 }
 
+/*function val_palabra(text, index, num) {
+    palabra = "";
+    for (let i = index; i < num; i++) {
+        palabra += text.charAt(i);
+        console.log(palabra);
+    }
+
+    return palabra;
+}*/
 
 function desincriptar() {
     let val = validateTextarea();
@@ -116,30 +125,70 @@ function desincriptar() {
         let codigo = document.getElementById('codigo1').value;
         let codigo_minuscula = codigo.toLowerCase()
         let codigo_desencriptado = "";
+        let palabra = "";
 
         for (let index = 0; index < codigo.length; index++) {
             let letra = codigo_minuscula.charAt(index);
             if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
                 switch (letra) {
                     case 'a':
-                        letra = 'a';
-                        index++;
+                        palabra = "";
+                        palabra += letra;
+                        palabra += codigo_minuscula.charAt(index + 1);
+                        console.log(palabra);
+                        if (palabra === "ai") {
+                            letra = 'a';
+                            index++;
+                        }
                         break;
                     case 'e':
-                        letra = 'e';
-                        index = index + 4;
+                        palabra = "";
+                        palabra += letra;
+                        palabra += codigo_minuscula.charAt(index + 1);
+                        palabra += codigo_minuscula.charAt(index + 2);
+                        palabra += codigo_minuscula.charAt(index + 3);
+                        palabra += codigo_minuscula.charAt(index + 4);
+                        console.log(palabra);
+                        if (palabra === "enter") {
+                            letra = 'e';
+                            index = index + 4;
+                        }
                         break;
                     case 'i':
-                        letra = 'i';
-                        index = index + 3;
+                        palabra = "";
+                        palabra += letra;
+                        palabra += codigo_minuscula.charAt(index + 1);
+                        palabra += codigo_minuscula.charAt(index + 2);
+                        palabra += codigo_minuscula.charAt(index + 3);
+                        console.log(palabra);
+                        if (palabra === "imes") {
+                            letra = 'i';
+                            index = index + 3;
+                        }
                         break;
                     case 'o':
-                        letra = 'o';
-                        index = index + 3;
+                        palabra = "";
+                        palabra += letra;
+                        palabra += codigo_minuscula.charAt(index + 1);
+                        palabra += codigo_minuscula.charAt(index + 2);
+                        palabra += codigo_minuscula.charAt(index + 3);
+                        console.log(palabra);
+                        if (palabra === "ober") {
+                            letra = 'o';
+                            index = index + 3;
+                        }
                         break;
                     case 'u':
-                        letra = 'u';
-                        index = index + 3;
+                        palabra = "";
+                        palabra += letra;
+                        palabra += codigo_minuscula.charAt(index + 1);
+                        palabra += codigo_minuscula.charAt(index + 2);
+                        palabra += codigo_minuscula.charAt(index + 3);
+                        console.log(palabra);
+                        if (palabra === "ufat") {
+                            letra = 'u';
+                            index = index + 3;
+                        }
                         break;
                 }
             }

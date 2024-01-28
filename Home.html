@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Incriptador</title>
+
+</head>
+
+<body>
+    <script src="comportamientos.js" defer></script>
+    <header>
+        <img src="./Recursos/programacion.png" alt="logito.png" width="10%">
+    </header>
+    <main class="contenedor">
+        <div class="column">
+            <textarea name="codigo" id="codigo1" cols="30" rows="10"></textarea>
+            <label><img src="./Recursos/signo-de-exclamacion-en-un-circulo.png" alt="Signo_exclamacion" width="2%"> solo letras minusculas y sin acento</label>
+            <br>
+            <div class="botones">
+                <button id="incriptar" onclick="incriptar();">Incriptar</button>
+                <button id="desincriptar" onclick="desincriptar();">Desincriptar</button>
+            </div>
+
+        </div>
+
+        <div id="caja_text" class="column">
+            <img id="busqueda" src="./Recursos/expediente.png" alt="expediente.png" width="30%">
+            <h3 id="titulo_caja"></h3>
+            <p id="parrafo_caja"></p>
+            <button id="copiar" onclick="copiar();">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        <h2 id="contacto">Contacto</h2>
+        <a href="https://github.com/Rojo-Web" target="_blank">
+            <img id="github" src="./Recursos/logotipo-de-github.png" alt="Mi github" width="4%">
+        </a>
+        <a href="https://www.linkedin.com/in/santiago-figueroa-andrade-7ba1632ab/" target="_blank">
+            <img id="linkedin" src="./Recursos/6297a2f1e01809629f113598.png" alt="Mi linkedin" width="5%">
+        </a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+body {
+    background-color: azure;
+}
+
+
+/*header {
+    background-color: gainsboro;
+}*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #979595;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+.column {
+    /*background-color: #f0f0f0;*/
+    padding: 20px;
+}
+
+.botones {
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin-top: 10px;
+}
+
+#codigo1 {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    border-color: transparent;
+}
+
+#caja_text {
+    position: relative;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 20px;
+}
+
+#contacto {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#github {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#linkedin {
+    margin-left: 10px;
+}
+
+#incriptar {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#desincriptar {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 10px 5px auto;
+    border-radius: 5px;
+    background-color: #45ab482a;
+    color: #4CAF50;
+    font-size: 18px;
+    border: 3px solid #4CAF50;
+    cursor: pointer;
+}
+
+#copiar {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #979595;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#incriptar:hover {
+    background-color: #3e8e41;
+}
+
+#desincriptar:hover {
+    background-color: rgba(43, 131, 46, 0.633);
+    color: white;
+}
+
+#copiar:hover {
+    background-color: #97959590;
+    color: white;
+}
+
+#titulo_caja {
+    margin-bottom: 20px;
+}
+
+#parrafo_caja {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#busqueda {
+    margin-bottom: 30px;
+}

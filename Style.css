@@ -156,7 +156,7 @@ footer {
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1530px) {
+@media screen and (min-width: 1540px) {
     footer {
         position: relative;
         margin-top: 100px;
